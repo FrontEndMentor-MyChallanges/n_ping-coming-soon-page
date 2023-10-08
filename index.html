@@ -1,79 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <script
+      src="https://kit.fontawesome.com/fb401d652e.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="./script.js" defer></script>
+  </head>
 
+  <body
+    class="relative flex flex-col items-center min-h-screen font-libreFranklin"
+  >
+    <div
+      class="flex flex-col items-center text-center h-full min-h-screen wrapper max-w-[640px] lg:max-w-[768px]"
+    >
+      <div class="flex justify-center mt-16 md:mt-10 logo">
+        <img src="./images/logo.svg" alt="" class="w-3/4 sm:w-full" />
+      </div>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./dist/style.css">
-  <title>Frontend Mentor | Ping coming soon page</title>
-  <script src="https://kit.fontawesome.com/fb401d652e.js" crossorigin="anonymous" defer></script>
-  <script src="./script.js" defer></script>
+      <header class="flex flex-col items-center px-4 flex-0">
+        <h1
+          class="mt-12 md:mt-10 text-2xl sm:text-4xl lg:text-6xl text-textLight"
+        >
+          We are launching <span class="font-bold text-textDark">soon!</span>
+        </h1>
+        <p class="mt-6 text-sm lg:mt-4 sm:text-base lg:text-lg text-textDark">
+          Subscribe and get notified
+        </p>
+      </header>
 
+      <main class="flex flex-col w-full h-full mt-10 mb-10 lg:mb-12">
+        <form
+          id="email"
+          name="email"
+          class="flex flex-col gap-3 px-12 form sm:flex-row sm:w-full"
+        >
+          <div class="emailContainer relative w-full">
+            <input
+              type="text"
+              class="emailInput sm:flex-1 w-full py-3 text-sm rounded-full border-[1px] border-secondary pl-8 placeholder:text-secondary focus:outline-primary focus:outline-1"
+              placeholder="Your email adress..."
+            />
+            <p
+              class="emailError mt-2 sm:mt-3 text-[10px] sm:text-xs italic text-center sm:text-left sm:font-[600] sm:ml-8 text-error hidden mb-3 sm:mb-0"
+            >
+              Please provide a valid email address
+            </p>
+          </div>
 
-</head>
+          <button
+            type="submit"
+            class="btnSubmit sm:w-2/5 w-full py-3 text-sm text-white rounded-full bg-primary shadow-[0_12px_16px_-8px_rgba(79,125,243,0.4)] hover:bg-primaryHover transition-colors self-start"
+          >
+            Notify Me
+          </button>
+        </form>
+        <div class="px-8 my-16 self-center diagramsImage">
+          <img src="./images/illustration-dashboard.png" alt="" />
+        </div>
+        <div class="flex justify-center gap-3 mt-auto socials">
+          <div
+            class="flex items-center justify-center border-[1px] border-secondary rounded-full w-8 h-8 text-primary hover:text-white hover:bg-primary transition-colors"
+          >
+            <a href="https:\\www.facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook-f mt-[5px]"></i
+            ></a>
+          </div>
+          <div
+            class="flex items-center justify-center border-[1px] border-secondary rounded-full w-8 h-8 text-primary hover:text-white hover:bg-primary transition-colors"
+          >
+            <a href="https:\\www.twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter mt-[5px]"></i
+            ></a>
+          </div>
+          <div
+            class="flex items-center justify-center border-[1px] border-secondary rounded-full w-8 h-8 text-primary hover:text-white hover:bg-primary transition-colors"
+          >
+            <a href="https:\\www.instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram mt-[5px]"></i
+            ></a>
+          </div>
+        </div>
+        <p class="mt-6 text-xs text-center text-textLight">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </main>
 
-<body class="relative flex flex-col items-center min-h-screen font-libreFranklin">
-  <div class="flex flex-col items-center text-center h-full min-h-screen wrapper md:max-w-[700px] lg:max-w-[800px]">
-    <div class="flex justify-center mt-20 logo">
-      <img src="./images/logo.svg" alt="" class="w-3/4 sm:w-full">
+      <footer
+        class="w-full justify-center absolute left-1/2 -translate-x-1/2 bottom-4 text-[11px]"
+      >
+        <p class="text-center attribution">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da"
+            target="_blank"
+            class="text-primary focus:under"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            href="https://www.frontendmentor.io/profile/miroslaw-mroczkowski"
+            class="text-primary"
+            >Mirosław Mroczkowski</a
+          >.
+        </p>
+      </footer>
     </div>
-
-    <header class="flex flex-col items-center px-4 flex-0">
-      <h1 class="mt-12 text-2xl sm:text-4xl lg:text-6xl text-textLight">We are launching <span
-          class="font-bold text-textDark">soon!</span></h1>
-      <p class="mt-6 text-sm lg:mt-4 sm:text-base lg:text-lg text-textDark">Subscribe and get notified</p>
-    </header>
-
-    <main class="flex flex-col w-full h-full mt-8 mb-12">
-      <form class="flex flex-col gap-3 px-12 form sm:flex-row sm:w-full">
-
-        <input type="text"
-          class="emailInput sm:flex-1 w-full py-3 text-sm rounded-full border-[1px] border-secondary pl-8 placeholder:text-secondary focus:outline-primary focus:outline-1"
-          placeholder="Your email adress...">
-        <p class="mt-[6px] text-xs italic text-center text-error hidden">Please provide a valid email address</p>
-
-        <button type="submit"
-          class="btnSubmit sm:w-1/4 w-full py-3 text-sm text-white rounded-full bg-primary shadow-[0_12px_16px_-8px_rgba(79,125,243,0.4)] hover:bg-primaryHover transition-colors">Notify
-          Me</button>
-      </form>
-      <div class="px-8 mt-16 mb-[100px] self-center diagramsImage">
-        <img src="./images/illustration-dashboard.png" alt="">
-      </div>
-      <div class="flex justify-center gap-3 mt-auto socials ">
-        <div
-          class="flex items-center justify-center border-[1px] border-secondary rounded-full w-8 h-8 text-primary hover:text-white hover:bg-primary transition-colors">
-          <a href="https:\\www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f mt-[5px]"></i></a>
-        </div>
-        <div
-          class="flex items-center justify-center border-[1px] border-secondary rounded-full w-8 h-8 text-primary hover:text-white hover:bg-primary transition-colors">
-          <a href="https:\\www.twitter.com" target="_blank"><i class="fa-brands fa-twitter mt-[5px]"></i></a>
-        </div>
-        <div
-          class="flex items-center justify-center border-[1px] border-secondary rounded-full w-8 h-8 text-primary hover:text-white hover:bg-primary transition-colors">
-          <a href="https:\\www.instagram.com" target="_blank"><i class="fa-brands fa-instagram mt-[5px]"></i></a>
-        </div>
-      </div>
-      <p class="mt-6 text-xs text-center text-textLight">&copy; Copyright Ping. All rights reserved.</p>
-    </main>
-
-    <footer class="w-full justify-center absolute left-1/2 -translate-x-1/2 bottom-4 text-[11px]">
-      <p class="text-center attribution">
-        Challenge by <a
-          href="https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da"
-          target="_blank" class="text-primary focus:under">Frontend
-          Mentor</a>.
-        Coded by <a href="https://www.frontendmentor.io/profile/miroslaw-mroczkowski" class="text-primary">Mirosław
-          Mroczkowski</a>.
-      </p>
-    </footer>
-  </div>
-</body>
-
+  </body>
 </html>
