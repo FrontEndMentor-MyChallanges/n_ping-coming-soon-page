@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/FrontEndMentor-MyChallanges/n_ping-coming-soon-page)
+- Live Site URL: [Live](https://frontendmentor-mychallanges.github.io/n_ping-coming-soon-page/)
 
 ## My process
 
